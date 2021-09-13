@@ -1,21 +1,16 @@
 import { minifyHtml, injectHtml } from 'vite-plugin-html'
-import legacy from '@vitejs/plugin-legacy'
+import vue from '@vitejs/plugin-vue'
 const path = require('path')
-const { createVuePlugin } = require('vite-plugin-vue2')
 
 module.exports = {
   plugins: [
-    createVuePlugin(),
+    vue(),
     minifyHtml(),
     injectHtml({
       injectData: {
         title: 'ProjectName',
-        description: 'A single page application created using Vue.js'
+        description: 'A single page application created using Vue.js 3'
       }
-    }),
-    legacy({
-      targets: ['ie >= 11'],
-      additionalLegacyPolyfills: ['regenerator-runtime/runtime']
     })
   ],
   resolve: {
