@@ -1,3 +1,10 @@
+# 1.0.0 (2021-09-13)
+
+
+### Features
+
+* first commit ([625f26c](https://github.com/kouts/vue3-dataset/commit/625f26c000ee54d247c7871c17d37b5fd72dc54a))
+
 ## [1.0.8](https://github.com/kouts/vue-vite-starter-template/compare/v1.0.7...v1.0.8) (2021-08-25)
 
 
