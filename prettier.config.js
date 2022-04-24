@@ -1,1 +1,7 @@
-module.exports = require('eslint-config-kouts/prettier.config.js')
+module.exports = {
+  trailingComma: 'none',
+  printWidth: 120,
+  tabWidth: 2,
+  semi: false,
+  singleQuote: true
+}

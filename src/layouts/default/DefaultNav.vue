@@ -27,20 +27,16 @@
   </nav>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      navbarExpanded: false
-    }
-  },
-  methods: {
-    toggleNavbar() {
-      this.navbarExpanded = !this.navbarExpanded
-    },
-    collapseNavbar() {
-      this.navbarExpanded = false
-    }
-  }
+<script setup>
+import { ref } from 'vue'
+
+const navbarExpanded = ref(false)
+
+const toggleNavbar = () => {
+  navbarExpanded.value = !navbarExpanded.value
+}
+
+const collapseNavbar = () => {
+  navbarExpanded.value = false
 }
 </script>
