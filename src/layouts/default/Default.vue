@@ -6,16 +6,9 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import DefaultNav from './DefaultNav.vue'
 import DefaultFooter from './DefaultFooter.vue'
-
-export default {
-  components: {
-    DefaultNav,
-    DefaultFooter
-  }
-}
 </script>
 
 <style lang="scss">

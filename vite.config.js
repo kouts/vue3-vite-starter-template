@@ -1,15 +1,17 @@
-import { minifyHtml, injectHtml } from 'vite-plugin-html'
+import { createHtmlPlugin } from 'vite-plugin-html'
 import vue from '@vitejs/plugin-vue'
 const path = require('path')
 
 module.exports = {
   plugins: [
     vue(),
-    minifyHtml(),
-    injectHtml({
-      injectData: {
-        title: 'ProjectName',
-        description: 'A single page application created using Vue.js 3'
+    createHtmlPlugin({
+      minify: true,
+      inject: {
+        data: {
+          title: 'ProjectName',
+          description: 'A single page application created using Vue.js 3'
+        }
       }
     })
   ],
