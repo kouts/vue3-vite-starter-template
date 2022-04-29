@@ -7,8 +7,8 @@
 </template>
 
 <script setup>
-import DefaultNav from './DefaultNav.vue'
 import DefaultFooter from './DefaultFooter.vue'
+import DefaultNav from './DefaultNav.vue'
 </script>
 
 <style lang="scss">

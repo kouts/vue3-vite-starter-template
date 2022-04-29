@@ -1,5 +1,5 @@
-import { createHtmlPlugin } from 'vite-plugin-html'
 import vue from '@vitejs/plugin-vue'
+import { createHtmlPlugin } from 'vite-plugin-html'
 const path = require('path')
 
 module.exports = {
