@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/kouts/vue3-vite-starter-template/compare/v1.1.0...v1.1.1) (2022-04-29)
+
+
+### Bug Fixes
+
+* added comment for eslint import error ([bfd7588](https://github.com/kouts/vue3-vite-starter-template/commit/bfd7588ae942523fdac62a1c31444e872e1f8e44))
+
 # [1.1.0](https://github.com/kouts/vue3-vite-starter-template/compare/v1.0.2...v1.1.0) (2022-04-29)
 
 
