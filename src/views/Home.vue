@@ -14,5 +14,6 @@ export default {
 </script>
 
 <script setup>
+// eslint-disable-next-line import/first
 import HelloWorld from '@/components/HelloWorld.vue'
 </script>
