@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/kouts/vue3-vite-starter-template/compare/v1.1.2...v1.1.3) (2022-05-08)
+
+
+### Bug Fixes
+
+* removed unneeded div ([f0dc859](https://github.com/kouts/vue3-vite-starter-template/commit/f0dc85921ef02f0494fd85de8b27ec2f42521a15))
+
 ## [1.1.2](https://github.com/kouts/vue3-vite-starter-template/compare/v1.1.1...v1.1.2) (2022-04-29)
 
 
