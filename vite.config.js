@@ -1,8 +1,9 @@
 import vue from '@vitejs/plugin-vue'
 import { createHtmlPlugin } from 'vite-plugin-html'
-const path = require('path')
+import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
-module.exports = {
+export default defineConfig({
   plugins: [
     vue(),
     createHtmlPlugin({
@@ -17,7 +18,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '/src'),
+      '@': resolve(__dirname, '/src'),
       '~bootstrap': 'bootstrap'
     }
   },
@@ -28,4 +29,4 @@ module.exports = {
       }
     }
   }
-}
+})

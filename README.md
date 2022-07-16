@@ -4,9 +4,10 @@ A single page app [Vite](https://vitejs.dev) starter template, created to easily
 
 **Features**
 
-- Vuex 4 for state management
+- Jest for unit testing
+- Pinia for state management
 - Vue Router 4 for client-side routing
-- Bootstrap 4.6 for layout and styling
+- Bootstrap 5.2 for layout and styling
 - SCSS variables inside Vue components
 - Purgecss for eliminating unused CSS
 - Basic multiple layouts feature
@@ -42,6 +43,12 @@ npm run test:unit
 
 ```
 npm run lint
+```
+
+### Lints and fixes files
+
+```
+npm run lint-fix
 ```
 
 ### Customize configuration
