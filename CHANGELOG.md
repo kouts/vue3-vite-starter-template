@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/kouts/vue3-vite-starter-template/compare/v1.1.6...v1.1.7) (2022-10-09)
+
+
+### Bug Fixes
+
+* updated pinia ([912126a](https://github.com/kouts/vue3-vite-starter-template/commit/912126a51867d6b6f03fcc81118806aa23d5a0d4))
+
 ## [1.1.6](https://github.com/kouts/vue3-vite-starter-template/compare/v1.1.5...v1.1.6) (2022-10-08)
 
 
