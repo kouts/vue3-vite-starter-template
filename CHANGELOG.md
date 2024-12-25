@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/kouts/vue3-vite-starter-template/compare/v1.1.11...v1.2.0) (2024-12-25)
+
+
+### Bug Fixes
+
+* added silenceDeprecations to scss options for bootstrap ([1052875](https://github.com/kouts/vue3-vite-starter-template/commit/10528755401a6bfa41330168782fe671bf8e96c7))
+* fixed release action ([c6fb974](https://github.com/kouts/vue3-vite-starter-template/commit/c6fb9746b8d68f4d2c92fad40b48df4abcc6aabd))
+* fixed release config ([21f0003](https://github.com/kouts/vue3-vite-starter-template/commit/21f000399b4be074d933e031a5ec1130131b1691))
+
+
+### Features
+
+* updated npm packages ([d036fee](https://github.com/kouts/vue3-vite-starter-template/commit/d036fee26ef7c86c7d70af0afe2fed331bd1ea7f))
+
 ## [1.1.11](https://github.com/kouts/vue3-vite-starter-template/compare/v1.1.10...v1.1.11) (2023-06-04)
 
 
