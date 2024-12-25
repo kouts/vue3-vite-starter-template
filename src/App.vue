@@ -1,6 +1,6 @@
 <template>
   <component :is="layout">
-    <router-view />
+    <RouterView />
   </component>
 </template>
 
@@ -8,10 +8,11 @@
 import '@/scss/app.scss'
 
 export default {
+  name: 'App',
   computed: {
     layout() {
       return `layout-${this.$route.meta.layout || 'default'}`
-    }
-  }
+    },
+  },
 }
 </script>
