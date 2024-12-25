@@ -11,34 +11,65 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [18]
 
     steps:
       - name: Checkout 🛎
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup node env 🏗
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
+          node-version-file: '.nvmrc'
           check-latest: true
 
-      - name: Install dependencies 📦
-        run: npm install
+      - name: Setup pnpm 📦
+        uses: pnpm/action-setup@v4
+        with:
+          package_json_file: package.json
 
-      - name: Install semantic-release extra plugins 📦
-        run: npm install --save-dev @semantic-release/changelog @semantic-release/git
+      - name: Install dependencies 📦
+        run: pnpm install
 
       - name: Run linter 👀
-        run: npm run lint-fix
+        run: pnpm run lint-fix
 
       - name: Run tests 🧪
-        run: npm run test:unit --if-present
+        run: pnpm run test:unit
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
+  release:
+    runs-on: ${{ matrix.os }}
+    needs: ci
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          check-latest: true
+
+      - name: Setup pnpm 📦
+        uses: pnpm/action-setup@v4
+        with:
+          package_json_file: package.json
+
+      - name: Install dependencies 📦
+        run: pnpm install
+
+      - name: Install semantic-release extra plugins 📦
+        run: pnpm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git
 
       - name: Release
         env:
