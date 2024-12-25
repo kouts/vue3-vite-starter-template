@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="container">
-      <router-link to="/" class="navbar-brand" @click="collapseNavbar">ProjectName</router-link>
+      <RouterLink to="/" class="navbar-brand" @click="collapseNavbar">ProjectName</RouterLink>
       <button
         :class="['navbar-toggler', !navbarExpanded && 'collapsed']"
         type="button"
@@ -16,10 +16,10 @@
       <div id="navbarDefault" :class="['collapse navbar-collapse', navbarExpanded && 'show']">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <router-link to="/" class="nav-link" @click="collapseNavbar">Home</router-link>
+            <RouterLink to="/" class="nav-link" @click="collapseNavbar">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <router-link to="/about" class="nav-link" @click="collapseNavbar">About</router-link>
+            <RouterLink to="/about" class="nav-link" @click="collapseNavbar">About</RouterLink>
           </li>
         </ul>
       </div>

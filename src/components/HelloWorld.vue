@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld'
+  name: 'HelloWorld',
 }
 </script>
 
@@ -23,8 +23,8 @@ export default {
 defineProps({
   msg: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 </script>
 
